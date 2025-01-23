@@ -7,14 +7,14 @@ CC = gcc
  MYLIB_DIR = /dagon1/achitsaz/mylib/lib
  LIB_DIR = lib
 # LDFLAGS = -lm
-  LDFLAGS = -L$(MYLIB_DIR) -lListDS -lCRSMat -lm# -L$(LOC_LIB_DIR) -lListDS  # Linker flags to specify libraries
+  LDFLAGS = -L$(MYLIB_DIR) -lCGSolver -lCRSMat -lm# -L$(LOC_LIB_DIR) -lListDS  # Linker flags to specify libraries
 
 # Directories
 SRC_DIR = src
 BIN_DIR = bin
 
 # Target executable
-TARGET = $(BIN_DIR)/EXEC_CDSolver
+TARGET = $(BIN_DIR)/EXEC_Poisson
 
 # Source and object files
 SRCS = $(wildcard $(SRC_DIR)/*.c)
