@@ -2,3 +2,5 @@
 /test
 /temp
 *.png
+/run
+*.vtk
